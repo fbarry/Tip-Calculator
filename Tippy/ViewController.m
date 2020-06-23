@@ -32,6 +32,7 @@
     NSArray *tipAmounts = @[@(0.15), @(0.2), @(0.22)];
     double tipPercentage = [tipAmounts[self.tipController.selectedSegmentIndex] doubleValue];
     
+    // Calculate total amount
     double bill = [self.billField.text doubleValue];
     double tip = tipPercentage * bill;
     double total = bill + tip;
